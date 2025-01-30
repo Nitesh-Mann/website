@@ -55,6 +55,8 @@ body {
   --color3:#6C6C6C;
   --white: white;
   --text: white;
+  --footer-btn:#100c2e;
+  --price-btn:#121320;
   --national: "TestNaitonal2Condensed-Bold";
   --satoshi: "Satoshi";
   --card-style: backdrop-filter: blur(1px) saturate(108%);
@@ -87,8 +89,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 102%;
-  height: 104%;
+  width: 103%;
+  height: 106%;
   border-radius: 80px;
   background: linear-gradient(90deg, #7b2cff, #ffffff);
   z-index: -1;
@@ -759,6 +761,13 @@ body {
 .price-button {
   margin-top:2em;
 }
+.price-button .btns {
+  background-color:var(--price-btn);
+}
+
+.price-button .btns:hover {
+  background-color:transparent;
+}
 
 /*footer*/
 
@@ -808,6 +817,11 @@ body {
 
 .footer-head-content .btns {
   margin-top:1.2em;
+  background-color:var(--footer-btn);
+}
+
+.footer-head-content .btns:hover {
+  background-color:transparent;
 }
 
 .footer-menus {
