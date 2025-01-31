@@ -30,10 +30,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
+    <!--to top-->
+    <div class="to-top">
+      <i class="ph ph-caret-up"></i>
+    </div>
+
     <!--popup-form-->
     <div class="form-container">
       <div class="form-wrapper">
-        <div class="col-4 popup-form">
+        <div class="col-12 col-lg-4 popup-form">
           <i class="ph ph-x-circle"></i>
           <!-- <div class="gradient-circle"></div> -->
           <img
@@ -88,16 +93,43 @@
 
     <!--header1-->
     <div class="header1-wrapper">
+      <!--header-logo-->
       <div class="logo">
         <p>Ignite</p>
       </div>
-
+      <!--header-menus-->
       <div class="menus">
         <ul>
           <li><a href="#!">Services </a></li>
           <li><a href="#!">About</a></li>
           <li><a href="#!">FAQs</a></li>
         </ul>
+        <a href="#!" class="btns">
+          Support <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
+      <!--hamburger-->
+      <div class="hamburger" id="menu-toggle">
+        <label class="container-menu">
+          <input type="checkbox" />
+          <div class="checkmark">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <!--header2-->
+    <div class="header2">
+      <div class="header2-content">
+        <ul>
+          <li><a href="#!">Services </a></li>
+          <li><a href="#!">About</a></li>
+          <li><a href="#!">FAQs</a></li>
+        </ul>
+
         <a href="#!" class="btns">
           Support <i class="ph ph-arrow-right"></i>
         </a>
@@ -113,10 +145,10 @@
       />
       <img class="grid img-fluid" src="./images/grid.png" alt="lines grid" />
       <img class="rays img-fluid" src="./images/rays.png" alt="gradient rays" />
-      <div class="col-10 section1-content">
+      <div class="col-12 col-lg-10 section1-content">
         <div class="heading">
           <h1>
-            Let's Restore🤝Your Suspended <br />
+            Let's Restore 🤝 Your Suspended <br />
             <span> Google Ads Accounts </span>
           </h1>
         </div>
@@ -147,7 +179,7 @@
         </p>
       </div>
       <div class="row offer-row">
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="offer-1">
             <p>01</p>
             <h3>Expertise and experience</h3>
@@ -157,7 +189,7 @@
             </p>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="offer-1">
             <p>02</p>
             <h3>Review and action plan</h3>
@@ -168,7 +200,7 @@
             </p>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="offer-1 border-0">
             <p>03</p>
             <h3>Appeals and communication</h3>
@@ -184,7 +216,7 @@
     <!--section3-->
     <div class="section3">
       <p>Reconnectiong ♻️ you</p>
-      <p>to Your <i class="ph-bold ph-arrow-right"></i> Digital World</p>
+      <p>to Your<i class="ph-bold ph-arrow-right"></i> Digital World</p>
       <p>with Impactful✊Results.</p>
     </div>
 
@@ -193,7 +225,7 @@
       <div class="gradient-circle"></div>
 
       <div class="row m-0 section4-row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <div class="section4-headings">
             <p class="sub-headings">How it Works</p>
             <h2 class="headings">How We Work to Recover Your Google Account</h2>
@@ -208,7 +240,7 @@
             </a>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-12 col-lg-5">
           <div class="work-1">
             <!-- <i class="ph ph-envelope-simple"></i> -->
 
@@ -272,9 +304,11 @@
           <div class="section5-headings">
             <h2 class="headings">Trusted by Thousands Worldwide</h2>
           </div>
-          <div class="swiper-btns">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+          <div class="swiper-btns-desk d-none d-lg-block">
+            <div class="swiper-btns">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
         </div>
         <div class="swiper-wrapper">
@@ -364,6 +398,12 @@
           </div>
         </div>
         <!-- Navigation buttons -->
+        <div class="swiper-btn-mob d-block d-lg-none p-4 mt-2">
+          <div class="swiper-btns">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -371,7 +411,7 @@
     <div class="section6">
       <div class="gradient-circle"></div>
       <div class="row section6-row m-0">
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <p class="sub-headings">FAQs</p>
           <h2 class="headings">We’re here to answer all your questions</h2>
           <p class="headings-content">
@@ -382,7 +422,7 @@
           </p>
         </div>
 
-        <div class="col-5 faqs-accordion">
+        <div class="col-12 col-lg-5 faqs-accordion">
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -563,9 +603,11 @@
           <div class="section5-headings">
             <h2 class="headings">Simple, transparent pricing</h2>
           </div>
-          <div class="swiper-btns">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+          <div class="swiper-btns-desk d-none d-lg-block">
+            <div class="swiper-btns">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
         </div>
         <div class="swiper-wrapper">
@@ -676,6 +718,12 @@
           </div>
         </div>
         <!-- Navigation buttons -->
+        <div class="swiper-btn-mob d-block d-lg-none p-4 mt-2">
+          <div class="swiper-btns">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -684,7 +732,7 @@
       <img src="./images/footer-bg.png" />
       <div class="footer-wrapper">
         <div class="footer-head">
-          <div class="col-10 footer-head-content">
+          <div class="col-112 col-lg-10 footer-head-content">
             <p>Let’s elevate your business to new heights</p>
             <p>Reach out to and let’s embark on the journey together!</p>
             <a href="#!" class="btns">
@@ -694,7 +742,7 @@
         </div>
         <div class="footer-menus">
           <div class="row footer-menus-row">
-            <div class="col-3 footer-menu-content">
+            <div class="col-12 col-lg-3 footer-menu-content">
               <h4>logo</h4>
               <ul>
                 <li><a href="#!"> Phone: +1 628 333 2130 </a></li>
@@ -706,7 +754,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-2 footer-menu-content">
+            <div class="col-12 col-lg-2 footer-menu-content">
               <p>What we offer</p>
               <ul>
                 <li><a href="#!">Expertise and experience</a></li>
@@ -714,7 +762,7 @@
                 <li><a href="#!">Appeals and communication</a></li>
               </ul>
             </div>
-            <div class="col-2 footer-menu-content">
+            <div class="col-12 col-lg-2 footer-menu-content">
               <p>How it works</p>
               <ul>
                 <li><a href="#!"> Initial Consultation</a></li>
@@ -722,7 +770,7 @@
                 <li><a href="#!">Actions and Appeals </a></li>
               </ul>
             </div>
-            <div class="col-2 footer-menu-content">
+            <div class="col-12 col-lg-2 footer-menu-content">
               <p>Resources</p>
               <ul>
                 <li><a href="#!"> Testimonials </a></li>
@@ -730,7 +778,7 @@
                 <li><a href="#!"> Case Studies </a></li>
               </ul>
             </div>
-            <div class="col-2 footer-menu-content follow-us">
+            <div class="col-12 col-lg-2 footer-menu-content follow-us">
               <p>Follow Us</p>
               <ul>
                 <li>
