@@ -76,12 +76,51 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+// Toggle the 'show-header' class when the menu toggle changes
 document.getElementById("menu-toggle").addEventListener("change", function () {
-  document.querySelector(".header2").classList.toggle("show-header");
+  const header = document.querySelector(".header2");
+  header.classList.toggle("show-header");
 
-  if (document.querySelector(".header2").classList.contains("show-header")) {
+  if (header.classList.contains("show-header")) {
     document.body.style.overflow = "hidden"; // Disable scrolling
   } else {
     document.body.style.overflow = ""; // Enable scrolling
+  }
+});
+
+// Listen for clicks on the document
+document.addEventListener("click", function (event) {
+  const header = document.querySelector(".header2");
+  const menuToggle = document.getElementById("menu-toggle");
+  const menuCheckbox = document.getElementById("menu-checkbox");
+
+  // Check if the click was outside the header and the menu toggle
+  if (
+    header.classList.contains("show-header") &&
+    !header.contains(event.target) &&
+    !menuToggle.contains(event.target)
+  ) {
+    header.classList.remove("show-header");
+    document.body.style.overflow = ""; // Enable scrolling
+
+    // Uncheck the menu toggle if it's a checkbox
+    if (menuToggle.type === "checkbox") {
+      menuToggle.checked = false;
+    }
+
+    // Uncheck the menu-checkbox
+    if (menuCheckbox) {
+      menuCheckbox.checked = false;
+    }
+  }
+});
+
+
+window.addEventListener("scroll", function () {
+  let header = document.querySelector(".header1-wrapper");
+  if (window.scrollY > 150) { // Change 50 to adjust when the effect starts
+      header.style.backgroundColor = "var(--body)";
+  } else {
+      header.style.backgroundColor = "transparent";
   }
 });
