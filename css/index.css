@@ -48,6 +48,7 @@ body {
 }
 
 
+
 :root {
   --body: #010211;
   --color1: #7b2cff;
@@ -1047,8 +1048,6 @@ body {
   height: 45px;
 
 }
-
-
   .btns {
     padding:0.5em 1.5em;
     font-size:17px;
@@ -1226,32 +1225,29 @@ body {
   font-size:22px;
 }
 
-
-
 /*section3*/
 .section3 {
-  height:35vh;
+  height:100%;
   gap:12px;
-  padding:0em 1em;
+  padding:4em 1em;
 }
 
 .section3 p {
   font-size:36px;
   line-height:40px;
-  white-space: nowrap;
   text-align: center;
 }
 
 .section3 p:nth-child(2){
   gap:0px;
+  display:inline;
 }
 
 /*section4*/
 
 .section4 {
   padding:3em 1em;
-    overflow-x: hidden;
-
+  overflow-x: hidden;
 }
 
 .section4-row {
@@ -1366,12 +1362,13 @@ body {
 }
 
 .footer-head-content p:nth-child(1){
-  font-size:32px;
-  line-height: 44px;
+  font-size:26px;
+  line-height: 42px;
 }
 
 .footer-head-content p:nth-child(2){
-  font-size:18px;
+  font-size:16px;
+  line-height:30px;
 }
 
 .footer-menus {
@@ -1402,7 +1399,6 @@ body {
   flex-direction: column;
 }
 
-
 }
 
 /*mobile devices*/
@@ -1412,6 +1408,7 @@ body {
 
 /*table devices*/
 @media (min-width: 575.99px) and (max-width: 991.98px) {
+  
  
 }
 
