@@ -911,7 +911,7 @@ body {
   padding:0em 5em;
 }
 
-.footer img {
+.footer .footer-bg {
   position:absolute;
   top:0;
   left:0;
@@ -970,12 +970,11 @@ body {
   justify-content: space-between;
 }
 
-.footer-menu-content h4 {
-  font-family:var(--satoshi);
-  font-weight:600;
-  font-size:26px;
-  color:var(--text);
-  margin-bottom:1.2em;
+.footer-menu-content img {
+  width:190px;
+  object-fit: contain;
+  margin-bottom:1.5em;
+
 }
 
 .footer-menu-content p {
@@ -1379,10 +1378,11 @@ body {
   gap:1em;
 }
 
-.footer-menu-content h4 {
-  text-align: center;
+.footer-menu-content img {
+  display: flex;
+  justify-self: center;
+  margin-bottom:1.8em;
 }
-
 .footer-menu-content p {
   text-align: center;
 }
