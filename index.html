@@ -92,34 +92,36 @@
     </div>
 
     <!--header1-->
-    <div class="header1-wrapper">
-      <!--header-logo-->
-      <div class="logo">
-        <a href="#!">
-          <img src="./images/ignite-logo.png" class="img-fluid"
-        /></a>
-      </div>
-      <!--header-menus-->
-      <div class="menus">
-        <ul>
-          <li><a href="#!">Services </a></li>
-          <li><a href="#!">About</a></li>
-          <li><a href="#!">FAQs</a></li>
-        </ul>
-        <a href="#!" class="btns">
-          Support <i class="ph ph-arrow-right"></i>
-        </a>
-      </div>
-      <!--hamburger-->
-      <div class="hamburger" id="menu-toggle">
-        <label class="container-menu">
-          <input type="checkbox" id="menu-checkbox" />
-          <div class="checkmark">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </label>
+    <div class="header1">
+      <div class="header1-wrapper">
+        <!--header-logo-->
+        <div class="logo">
+          <a href="#!">
+            <img src="./images/ignite-logo.png" class="img-fluid"
+          /></a>
+        </div>
+        <!--header-menus-->
+        <div class="menus">
+          <ul>
+            <li><a href="#!">Services </a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">FAQs</a></li>
+          </ul>
+          <a href="#!" class="btns">
+            Support <i class="ph ph-arrow-right"></i>
+          </a>
+        </div>
+        <!--hamburger-->
+        <div class="hamburger" id="menu-toggle">
+          <label class="container-menu">
+            <input type="checkbox" id="menu-checkbox" />
+            <div class="checkmark">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+        </div>
       </div>
     </div>
 
@@ -144,22 +146,24 @@
       <img class="grid img-fluid" src="./images/grid.png" alt="lines grid" />
       <img class="rays img-fluid" src="./images/rays.png" alt="gradient rays" />
       <div class="col-12 col-xxl-10 section1-content">
-        <div class="heading">
+        <div class="heading a1">
           <h1>
             Let's Restore 🤝 Your Suspended <br />
             <span> Google Ads Accounts </span>
           </h1>
         </div>
-        <p>
+        <p class="a1">
           A suspended Google Ads account can disrupt your business and impact
           your online growth. Whether due to policy violations, payment issues,
           or misunderstandings, we identify the cause, prepare a strong appeal,
           submit documents, and communicate with Google to ensure smooth
           reinstatement.
         </p>
-        <a href="#!" class="btns">
-          Get Started <i class="ph ph-arrow-right"></i>
-        </a>
+        <div class="a1">
+          <a href="#!" class="btns">
+            Get Started <i class="ph ph-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -811,14 +815,18 @@
       </div>
     </div>
 
-    <!--script-->
-    <script src="./script/index.js"></script>
-
     <!--bootstrap js-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!--gsap animation-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <!--script-->
+    <script src="./script/index.js"></script>
   </body>
 </html>

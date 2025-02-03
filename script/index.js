@@ -1,3 +1,4 @@
+//swiper//
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -27,6 +28,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
   
+//form function//
   document.addEventListener("DOMContentLoaded", function () {
     const btns = document.querySelectorAll(".btns"); // Select all elements with .btns
     const closeBtn = document.querySelector(".ph-x-circle");
@@ -55,7 +57,7 @@ var swiper = new Swiper(".mySwiper", {
     });
 });
 
-  // scroll to top //
+// scroll to top //
   document.addEventListener("DOMContentLoaded", function () {
     // Check the window's scroll position on page load and toggle the scale of the "to-top" button
     toggleToTopButton();
@@ -80,7 +82,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// Toggle the 'show-header' class when the menu toggle changes
+//show-header//
 document.getElementById("menu-toggle").addEventListener("change", function () {
   const header = document.querySelector(".header2");
   header.classList.toggle("show-header");
@@ -119,7 +121,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-
+//header background//
 window.addEventListener("scroll", function () {
   let header = document.querySelector(".header1-wrapper");
   if (window.scrollY > 150) { // Change 50 to adjust when the effect starts
@@ -128,3 +130,28 @@ window.addEventListener("scroll", function () {
       header.style.backgroundColor = "transparent";
   }
 });
+
+
+var tl1 = gsap.timeline({duration:1,})
+
+tl1.from(".rays",{
+  width:0,
+  opacity:0,
+})
+
+tl1.from(".section1 .sparkles-1, .sparkles-2, .grid",{
+  height:0,
+  opacity:0,
+})
+
+tl1.from(".header1",{
+  y:-50,
+  opacity:0,
+})
+
+
+tl1.from(".a1",{
+  y:50,
+  opacity:0,
+  stagger:0.1,
+})
