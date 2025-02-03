@@ -132,26 +132,26 @@ window.addEventListener("scroll", function () {
 });
 
 
-var tl1 = gsap.timeline({duration:1,})
+// var tl1 = gsap.timeline({duration:1,})
 
-tl1.from(".rays",{
-  width:0,
-  opacity:0,
-})
+// tl1.from(".rays",{
+//   width:0,
+//   opacity:0,
+// })
 
-tl1.from(".section1 .sparkles-1, .sparkles-2, .grid",{
-  height:0,
-  opacity:0,
-})
+// tl1.from(".section1 .sparkles-1, .sparkles-2, .grid",{
+//   height:0,
+//   opacity:0,
+// })
 
-tl1.from(".header1",{
-  y:-50,
-  opacity:0,
-})
+// tl1.from(".header1",{
+//   y:-50,
+//   opacity:0,
+// })
 
 
-tl1.from(".a1",{
-  y:50,
-  opacity:0,
-  stagger:0.1,
-})
+// tl1.from(".a1",{
+//   y:50,
+//   opacity:0,
+//   stagger:0.1,
+// })
