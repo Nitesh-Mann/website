@@ -286,11 +286,10 @@ body {
   align-items: center;
 }
 
-.logo p {
-  margin: 0;
-  font-size: 36px;
-  font-family: var(--national);
-  color: var(--text);
+.logo a img {
+  width:100%;
+  height:90px;
+  object-fit: contain;
 }
 
 .header1-wrapper .menus {
@@ -422,7 +421,7 @@ body {
   height:fit-content;
   background-color:var(--body);
   z-index:80;
-  padding:5em 1em 0em 1em;
+  padding:6em 1em 0em 2em;
   transform:translateY(-150%);
   transition:ease 0.8s;
   display:none;
@@ -1408,15 +1407,302 @@ body {
 
 /*table devices*/
 @media (min-width: 575.99px) and (max-width: 991.98px) {
+
   
- 
+  /*section1*/
+  
+  .heading h1 {
+    font-size: 52px;
+    line-height: 64px;
+  }
+
+  /*section3*/
+
+  .section3 p {
+    font-size:52px;
+    line-height:56px;
+    text-align: center;
+  }
+  
 }
 
 /*large desktop devices*/
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
+
+  /*pop up form */
+
+.form-container {
+  height:100%;
+}
+
+.popup-form {
+  padding: 3em 2em;
+  height:100%;
+  overflow-y: scroll;
+  border:none;
+}
+
+/*to-top*/
+.to-top {
+  bottom: 2em;
+  right: 1em;
+}
+
+.to-top i {
+  padding: 10px;
+}
+
+
+/*--headings*/
+
+.headings {
+  font-size: 52px;
+  line-height:64px;
+}
+
+.headings-content {
+  width: 85%;
+  font-weight: 300;
+  font-size:18px;
+}
+
+.sub-headings {
+  font-size:22px;
+}
+
+
+  /*header-wrapper*/
+
+.header1-wrapper {
+  padding: 0.2em 1.5em;
+}
+
+
+
+/*section1*/
+.section1 {
+  padding:10em 1.5em 10em 1.5em;
+  height: 100%;
+}
+
+
+.section1-content {
+  gap: 1.4em;
+  padding-top: 0em;
+}
+
+.heading h1 {
+  font-size: 72px;
+  line-height: 82px;
+  text-align: center;
+}
+
+.heading h1 br {
+  display:none;
+}
+
+.section1-content p {
+  font-size: 18px;
+  width:75%;
+  font-weight:300;
+  line-height: 32px;
+  text-align: center;
+}
+
+.section1-content .btns {
+  margin-top:1em;
+}
+
+/*section2*/
+.section2 {
+  padding: 0em 1.5em;
+  margin-bottom:6em;
+}
+
+
+.section2-headings {
+  gap:1em;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 1em;
+}
+
+
+.offer-row {
+  padding: 2em 1em;
+  gap:2.5em;
+}
+
+.offer-1 {
+  gap:16px;
+  padding:0 0em;
+  border-right:none;
+}
+
+.offer-1 p:nth-child(1) {
+  margin-bottom:0.8em;
+
+}
+
+
+/*section3*/
+.section3 {
+  height:100%;
+  gap:12px;
+  padding:4em 1.5em;
+}
+
+.section3 p {
+  font-size:82px;
+  line-height:90px;
+  text-align: center;
+}
+
+.section3 p:nth-child(2){
+  gap:0px;
+  display:inline;
+}
+
+/*section4*/
+
+.section4 {
+  padding:3em 1.5em;
+  overflow-x: hidden;
+}
+
+.section4-row {
+  gap:3em;
+}
+
+.section4-headings {
+  gap:14px;
+}
+
+.section4-headings .headings-content {
+  width:100%;
+}
+
+.work-1  {
+  padding: 2em 1.5em ;
+}
+
+.work-1 dotlottie-player {
+  margin-bottom:0.8em;
   
+}
+
+/* .work-1 h4 {
+  font-size:26px;
+  line-height: 32px;
+} */
+
+
+/*section5*/
+.section5 {
+  padding:3em 1.5em 3em 1.5em;
+}
+
+.head-btns {
+  margin-bottom:2em;
+  padding-right:2em;
+
+}
+
+.testimonial-card {
+  min-height:450px;
+  padding:4em 2em 2em 2em;
+  gap:30px;
+}
+
+.testimonial-card p {
+  padding-bottom:2em;
+}
+
+.testimonial-name p {
+  border:none;
+  margin:0;
+  padding:0
+}
+
+/*section6*/
+.section6 {
+  padding:3em 1.5em;
+}
+
+.section6-row {
+  gap:2em;
+}
+
+.faqs-accordion .accordion {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  --bs-accordion-btn-padding-x: 0em;
+  --bs-accordion-btn-padding-y: 1em;
+  --bs-accordion-btn-icon-width: 1rem;
+  --bs-accordion-body-padding-x: 1em;
+  --bs-accordion-body-padding-y: 1em;
+}
+
+.faqs-accordion .accordion-button {
+  font-size:20px;
+  font-weight:300;
+}
+
+
+/*section7*/
+.section7 {
+  padding:3em 1em 1em 1em;
+}
+
+.price-card {
+  min-height:450px;
+  padding: 2em;
+  gap:16px;
+
+}
+
+.price-card .price-head h4 {
+  line-height: 46px;
+}
+
+.price-button {
+  margin-top:1em;
+}
+
+
+/*footer*/
+
+.footer {
+  padding:0em 1.5em;
+  min-height:100%;
+}
+
+  
+   
+}
+
+@media (min-width:1199.98px) and (max-width:1366.98px) {
+  /*section3*/
+.section3 {
+  height:100%;
+  gap:12px;
+  padding:4em 1.5em;
+}
+
+.section3 p {
+  font-size:82px;
+  line-height:90px;
+  text-align: center;
+}
+
+.section3 p:nth-child(2){
+  gap:0px;
+  display:inline;
+}
 }
 
 /*extra large desktop devices */
 @media (min-width: 1366.98px) and (max-width: 1512.98px) {
+
 }
