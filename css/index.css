@@ -30,6 +30,7 @@
 
 body {
   background-color: var(--body) !important;
+  scroll-behavior: smooth;
 }
 
 /* For Webkit Browsers (Chrome, Safari) */
