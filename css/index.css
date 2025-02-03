@@ -145,7 +145,7 @@ body {
   line-height: 28px;
   font-weight: 400;
   color: var(--text);
-  width: 30%;
+  width: 45%;
 }
 
 .sub-headings {
@@ -817,8 +817,16 @@ body {
   background-color:transparent;
   font-family:var(--satoshi);
   font-weight:400;
-  font-size:20px;
+  font-size:18px;
   color:var(--text);
+  line-height:28px;
+}
+
+.faqs-accordion .accordion-body {
+  font-family:var(--satoshi);
+  font-weight:300;
+  font-size:16px;
+  line-height:28px;
 }
 
 
@@ -971,7 +979,7 @@ body {
 }
 
 .footer-menu-content img {
-  width:190px;
+  width:200px;
   object-fit: contain;
   margin-bottom:1.5em;
 
