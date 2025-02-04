@@ -132,26 +132,120 @@ window.addEventListener("scroll", function () {
 });
 
 
-// var tl1 = gsap.timeline({duration:1,})
+//loader animation//
 
-// tl1.from(".rays",{
-//   width:0,
-//   opacity:0,
-// })
+window.addEventListener("load", function () {
+  var loader = document.querySelector(".loader");
+  window.scrollTo(0, 0);
 
-// tl1.from(".section1 .sparkles-1, .sparkles-2, .grid",{
-//   height:0,
-//   opacity:0,
-// })
+  // Show loader for 1 second before hiding it
+  setTimeout(function () {
+    loader.classList.add("hidden");
 
-// tl1.from(".header1",{
-//   y:-50,
-//   opacity:0,
-// })
+    // Start animations after loader hides
+    var tl1 = gsap.timeline({ duration: 1 });
 
+    tl1.from(".rays", {
+      width: 0,
+      opacity: 0,
+    });
 
-// tl1.from(".a1",{
-//   y:50,
-//   opacity:0,
-//   stagger:0.1,
-// })
+    tl1.from(".section1 .sparkles-1, .sparkles-2, .grid", {
+      height: 0,
+      opacity: 0,
+    });
+
+    tl1.from(".header1", {
+      y: -50,
+      opacity: 0,
+    });
+
+    tl1.from(".a1", {
+      y: 50,
+      opacity: 0,
+      stagger: 0.1,
+    });
+
+  }, 1000); // 1 second delay for loader
+});
+
+gsap.from(".a2", {
+  scrollTrigger: {
+    trigger: ".section2",
+    markers: false,
+    start: "0% 80%",
+  },
+  x: "-50",
+  ease: "power.in",
+  opacity: 0,
+  duration: 0.5,
+});
+
+gsap.from(".a3", {
+  scrollTrigger: {
+    trigger: ".section2",
+    markers: false,
+    start: "0% 80%",
+  },
+  x: "50",
+  ease: "power.in",
+  opacity: 0,
+  duration: 0.5,
+});
+
+gsap.from(".a4", {
+  scrollTrigger: {
+    trigger: ".section2",
+    markers: false,
+    start: "35% 90%",
+    
+  },
+  y: "60",
+  ease: "power.in",
+  opacity: 0,
+  duration: 0.5,
+  stagger:0.2,
+});
+
+gsap.from(".a5", {
+  scrollTrigger: {
+    trigger: ".section3",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  y: "50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+  stagger:0.4,
+});
+
+gsap.from(".a6", {
+  scrollTrigger: {
+    trigger: ".section4",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  x: "-50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+  stagger:0.4,
+});
+
+gsap.from(".a7", {
+  scrollTrigger: {
+    trigger: ".section4",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  x: "50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+  stagger:0.5,
+});
+

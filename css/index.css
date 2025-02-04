@@ -48,8 +48,6 @@ body {
   -ms-overflow-style: none;
 }
 
-
-
 :root {
   --body: #010211;
   --color1: #7b2cff;
@@ -66,6 +64,66 @@ body {
   --card-bg:rgba(163, 163, 163, 0.1);
   --card-border-radius: 30px;
   --card-border: 1px solid rgba(111, 111, 111, 0.1);
+}
+
+/*loader*/
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--body);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  transition: 0.8s;
+}
+
+.work-loader {
+  background-color: var(--color3);
+}
+
+.loader p {
+  font-family: var(--neu);
+  font-weight: 400;
+  font-size: 52px;
+}
+
+.hidden {
+  transform: translateY(-100%);
+}
+
+.bar-loader {
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  animation: scale-up4 1s linear infinite;
+}
+
+.bar-loader:nth-child(2) {
+  height: 35px;
+  margin: 0 5px;
+  animation-delay: 0.25s;
+}
+
+.bar-loader:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes scale-up4 {
+  20% {
+    background-color: #ffff;
+    transform: scaleY(1.5);
+  }
+
+  40% {
+    transform: scaleY(1);
+  }
 }
 
 .btns {
