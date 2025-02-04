@@ -149,7 +149,7 @@ window.addEventListener("load", function () {
     var tl1 = gsap.timeline({ duration: 0.5 });
 
     tl1.from(".rays", {
-      width: 0,
+      height: 0,
       opacity: 0,
     });
 
