@@ -1,3 +1,4 @@
+
 //swiper//
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -135,15 +136,17 @@ window.addEventListener("scroll", function () {
 //loader animation//
 
 window.addEventListener("load", function () {
-  var loader = document.querySelector(".loader");
-  window.scrollTo(0, 0);
 
+  var loader = document.querySelector(".loader");
+  
   // Show loader for 1 second before hiding it
   setTimeout(function () {
-    loader.classList.add("hidden");
+    if (loader) {
+      loader.classList.add("hidden");
+    }
 
     // Start animations after loader hides
-    var tl1 = gsap.timeline({ duration: 1 });
+    var tl1 = gsap.timeline({ duration: 0.5 });
 
     tl1.from(".rays", {
       width: 0,
@@ -165,9 +168,10 @@ window.addEventListener("load", function () {
       opacity: 0,
       stagger: 0.1,
     });
-
   }, 1000); // 1 second delay for loader
 });
+
+//section2//
 
 gsap.from(".a2", {
   scrollTrigger: {
@@ -207,6 +211,8 @@ gsap.from(".a4", {
   stagger:0.2,
 });
 
+//section3
+
 gsap.from(".a5", {
   scrollTrigger: {
     trigger: ".section3",
@@ -220,6 +226,8 @@ gsap.from(".a5", {
   duration: 0.5,
   stagger:0.4,
 });
+
+//work section4//
 
 gsap.from(".a6", {
   scrollTrigger: {
@@ -249,3 +257,126 @@ gsap.from(".a7", {
   stagger:0.5,
 });
 
+//testimonial section//
+
+gsap.from(".a8", {
+  scrollTrigger: {
+    trigger: ".section5",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  x: "-50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+});
+
+gsap.from(".a9", {
+  scrollTrigger: {
+    trigger: ".section5",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  x: "50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+});
+
+gsap.from(".a10", {
+  scrollTrigger: {
+    trigger: ".section5",
+    markers: false,
+    start: "30% 90%",
+    
+  },
+  y: "50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+});
+
+//faqs section//
+
+gsap.from(".a11", {
+  scrollTrigger: {
+    trigger: ".section6",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  x: "-50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+});
+
+gsap.from(".a12", {
+  scrollTrigger: {
+    trigger: ".section6",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  x: "50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+});
+
+// pricing section//
+
+gsap.from(".a13", {
+  scrollTrigger: {
+    trigger: ".section7",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  x: "-50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+});
+
+gsap.from(".a14", {
+  scrollTrigger: {
+    trigger: ".section7",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  x: "50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+});
+
+gsap.from(".a15", {
+  scrollTrigger: {
+    trigger: ".section7",
+    markers: false,
+    start: "30% 90%",
+    
+  },
+  y: "50",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+});
+
+//footer//
+gsap.from(".footer-bg", {
+  scrollTrigger: {
+    trigger: ".footer",
+    markers: false,
+    start: "20% 90%",
+    
+  },
+  height:"0",
+  opacity:"0",
+  ease: "power.in",
+  duration: 0.5,
+});
