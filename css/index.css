@@ -569,6 +569,7 @@ body {
   color: var(--text);
   font-size: 74px;
   font-weight: 600;
+  line-height:95px;
   margin: 0;
   text-transform: capitalize;
 }

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dominate Ignite About</title>
+    <!--css-->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/service.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <!--boostrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!--icons-->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <!--swiper css-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!--loader-->
+    <div class="loader">
+      <span class="bar-loader"></span>
+      <span class="bar-loader"></span>
+      <span class="bar-loader"></span>
+    </div>
+
+    <!--to top-->
+    <div class="to-top">
+      <i class="ph-bold ph-caret-up"></i>
+    </div>
+
+    <!--popup-form-->
+    <div class="form-container">
+      <div class="form-wrapper">
+        <div class="col-12 col-xl-4 popup-form">
+          <i class="ph ph-x-circle"></i>
+          <!-- <div class="gradient-circle"></div> -->
+          <img
+            class="rays img-fluid"
+            src="./images/rays.png"
+            alt="gradient rays"
+          />
+          <h2>Contact Us</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputFirstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="inputFirstName" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputLastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="inputLastName" />
+            </div>
+            <div class="col-12">
+              <label for="inputContact" class="form-label"
+                >Contact Number</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="inputContact"
+                min="0"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" />
+            </div>
+            <div class="col-12">
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea2"
+                  style="height: 120px"
+                ></textarea>
+                <label for="floatingTextarea2">Comments</label>
+              </div>
+            </div>
+            <div class="col-12 mt-5">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--header1-->
+    <div class="header1">
+      <div class="header1-wrapper">
+        <!--header-logo-->
+        <div class="logo">
+          <a href="index.html">
+            <img src="./images/ignite-logo.png" class="img-fluid"
+          /></a>
+        </div>
+        <!--header-menus-->
+        <div class="menus">
+          <ul>
+            <li><a href="about.html">About Us </a></li>
+            <li><a href="service.html">Services </a></li>
+            <li><a href="#faqs">FAQs</a></li>
+          </ul>
+          <a href="#!" class="btns">
+            Support <i class="ph ph-arrow-right"></i>
+          </a>
+        </div>
+        <!--hamburger-->
+        <div class="hamburger" id="menu-toggle">
+          <label class="container-menu">
+            <input type="checkbox" id="menu-checkbox" />
+            <div class="checkmark">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!--header2-->
+    <div class="header2">
+      <div class="header2-content">
+        <ul>
+          <li><a href="about.html">About Us </a></li>
+          <li><a href="service.html">Services </a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--service-section1-->
+    <div class="section1 section1-service">
+      <img class="grid img-fluid" src="./images/grid.png" alt="lines grid" />
+      <img class="rays img-fluid" src="./images/rays.png" alt="gradient rays" />
+      <div class="col-12 col-xxl-10 section1-content">
+        <div class="heading">
+          <h1>
+            Dominate Ignite Services
+            <span>
+              <img src="./images/service.png" />
+            </span>
+            Unlock & Restore Suspended Google Accounts
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--about-section5-->
+    <!--section2-service-->
+    <div class="section5-about section2-service">
+      <div class="row d-flex justify-content-between">
+        <div class="col-5">
+          <div class="section5-about-heading">
+            <h2 class="headings">Our Services</h2>
+            <p class="headings-content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+              optio voluptatem, soluta tenetur fugit corrupti voluptas ipsam
+              similique sunt.
+            </p>
+            <a href="#!" class="btns mt-4">
+              Our Services <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="row service-row">
+            <div class="col-6">
+              <div class="service-1 bg-service">
+                <p>01</p>
+                <h4>lore ipsum</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Recusandae, laborum? Soluta, atque dolore possimus odio
+                  laborum laboriosam? Non eum explicabo libero adipisci.
+                </p>
+                <a href="#!" class="btns">
+                  Get Started <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="service-1">
+                <p>02</p>
+                <h4>lore ipsum dolor</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Recusandae, laborum? Soluta, atque dolore possimus odio
+                  laborum laboriosam? Non eum explicabo libero adipisci.
+                </p>
+                <a href="#!" class="btns">
+                  Get Started <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="service-1">
+                <p>03</p>
+                <h4>lore ipsum</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Recusandae, laborum? Soluta, atque dolore possimus odio
+                  laborum laboriosam? Non eum explicabo libero adipisci.
+                </p>
+                <a href="#!" class="btns">
+                  Get Started <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="service-1 bg-service">
+                <p>04</p>
+                <h4>lore ipsum</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Recusandae, laborum? Soluta, atque dolore possimus odio
+                  laborum laboriosam? Non eum explicabo libero adipisci.
+                </p>
+                <a href="#!" class="btns">
+                  Get Started <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--section7-->
+    <!--section3-service-->
+    <div class="section7 section3-service">
+      <div class="swiper mySwiper">
+        <div class="head-btns">
+          <div class="section5-headings a13">
+            <h2 class="headings">Suspension Services</h2>
+          </div>
+          <div class="swiper-btns-desk d-none d-lg-block a14">
+            <div class="swiper-btns">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-wrapper a15">
+          <div class="swiper-slide">
+            <div class="price-card">
+              <div class="price-head">
+                <h4>Suspicious Payment Activity</h4>
+                <p>$999</p>
+              </div>
+
+              <div class="price-list">
+                <ul>
+                  <li>Investigate suspicious payment activities.</li>
+                  <li>Ensure secure transactions.</li>
+                  <li>Prompt and effective resolution.</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a href="#!" class="btns">
+                  Get Started <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="price-card">
+              <div class="price-head">
+                <h4>Suspicious Payment Activity</h4>
+                <p>$999</p>
+              </div>
+
+              <div class="price-list">
+                <ul>
+                  <li>Investigate suspicious payment activities.</li>
+                  <li>Ensure secure transactions.</li>
+                  <li>Prompt and effective resolution.</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a href="#!" class="btns">
+                  Get Started <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="price-card">
+              <div class="price-head">
+                <h4>Suspicious Payment Activity</h4>
+                <p>$999</p>
+              </div>
+
+              <div class="price-list">
+                <ul>
+                  <li>Investigate suspicious payment activities.</li>
+                  <li>Ensure secure transactions.</li>
+                  <li>Prompt and effective resolution.</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a href="#!" class="btns">
+                  Get Started <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="price-card">
+              <div class="price-head">
+                <h4>Suspicious Payment Activity</h4>
+                <p>$999</p>
+              </div>
+
+              <div class="price-list">
+                <ul>
+                  <li>Investigate suspicious payment activities.</li>
+                  <li>Ensure secure transactions.</li>
+                  <li>Prompt and effective resolution.</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a href="#!" class="btns">
+                  Get Started <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="price-card">
+              <div class="price-head">
+                <h4>Suspicious Payment Activity</h4>
+                <p>$999</p>
+              </div>
+
+              <div class="price-list">
+                <ul>
+                  <li>Investigate suspicious payment activities.</li>
+                  <li>Ensure secure transactions.</li>
+                  <li>Prompt and effective resolution.</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a href="#!" class="btns">
+                  Get Started <i class="ph ph-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-btn-mob d-block d-lg-none p-4 mt-2">
+          <div class="swiper-btns">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--section4-service-->
+    <div class="section4-service">
+      <div class="section4-service-headings">
+        <h2 class="headings">What we offer</h2>
+        <p class="headings-content">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor iusto
+          voluptatem, dignissimos cum fugiat nemo.
+        </p>
+      </div>
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-head">
+            <p>01</p>
+            <h5>hello world</h5>
+          </div>
+          <div class="step-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus numquam distinctio tenetur exercitationem eaque sit
+              quidem doloremque qui, ipsa itaque rem.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-head">
+            <p>01</p>
+            <h5>hello world</h5>
+          </div>
+          <div class="step-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus numquam distinctio tenetur exercitationem eaque sit
+              quidem doloremque qui, ipsa itaque rem.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-head">
+            <p>01</p>
+            <h5>hello world</h5>
+          </div>
+          <div class="step-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus numquam distinctio tenetur exercitationem eaque sit
+              quidem doloremque qui, ipsa itaque rem.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-head">
+            <p>01</p>
+            <h5>hello world</h5>
+          </div>
+          <div class="step-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Accusamus numquam distinctio tenetur exercitationem eaque sit
+              quidem doloremque qui, ipsa itaque rem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <img src="./images/footer-bg.png" class="footer-bg" />
+      <div class="footer-wrapper">
+        <div class="footer-head">
+          <div class="col-112 col-lg-10 footer-head-content">
+            <p>Let’s elevate your business to new heights</p>
+            <p>Reach out to and let’s embark on the journey together!</p>
+            <a href="#!" class="btns">
+              Get Started <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-menus">
+          <div class="row footer-menus-row">
+            <div class="col-12 col-lg-4 footer-menu-content footer-logo">
+              <a href="index.html">
+                <img src="./images/ignite-logo-footer.png" class="img-fluid" />
+              </a>
+              <ul>
+                <li><a href="#!"> Phone: +1 628 333 2130 </a></li>
+                <li><a href="#!"> Email: support@gmail.com </a></li>
+                <li>
+                  <a href="#!"
+                    >Opening Hours: Monday - Friday, 09:00 - 17:00
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-2 footer-menu-content">
+              <p>What we offer</p>
+              <ul>
+                <li><a href="#!">Expertise and experience</a></li>
+                <li><a href="#!">Review and action plan</a></li>
+                <li><a href="#!">Appeals and communication</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-2 footer-menu-content">
+              <p>How it works</p>
+              <ul>
+                <li><a href="#!"> Initial Consultation</a></li>
+                <li><a href="#!"> Account Review and Strategy </a></li>
+                <li><a href="#!">Actions and Appeals </a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-2 footer-menu-content">
+              <p>Resources</p>
+              <ul>
+                <li><a href="#!"> Testimonials </a></li>
+                <li><a href="#!"> FAQ </a></li>
+                <li><a href="#!"> Case Studies </a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-2 footer-menu-content follow-us">
+              <p>Follow Us</p>
+              <ul>
+                <li>
+                  <a href="#!">
+                    <i class="ph-fill ph-facebook-logo"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!"> <i class="ph-fill ph-x-logo"></i> </a>
+                </li>
+                <li>
+                  <a href="#!"> <i class="ph-fill ph-instagram-logo"></i> </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p>© 2025 . All Rights Reserved.</p>
+          <p class="policies">
+            <a href="#!"> Terms of Use </a> | <a href="#!"> Privacy Policy </a>|
+            <a href="#!"> Cookie Policy </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--gsap animation-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <!--script-->
+    <script src="./script/index.js"></script>
+  </body>
+</html>
