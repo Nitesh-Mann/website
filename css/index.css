@@ -483,7 +483,7 @@ body {
   height:fit-content;
   background-color:var(--body);
   z-index:80;
-  padding:7em 1em 0em 2em;
+  padding:6em 1em 0em 2em;
   transform:translateY(-150%);
   transition:ease 0.8s;
   display:none;
