@@ -31,7 +31,7 @@ var swiper = new Swiper(".mySwiper", {
   
 //form function//
   document.addEventListener("DOMContentLoaded", function () {
-    const btns = document.querySelectorAll(".btns"); // Select all elements with .btns
+    const btns = document.querySelectorAll(".form-btn"); // Select all elements with .btns
     const closeBtn = document.querySelector(".ph-x-circle");
     const formContainer = document.querySelector(".form-container");
     const formWrapper = document.querySelector(".form-wrapper");
@@ -146,237 +146,237 @@ window.addEventListener("load", function () {
     }
 
     // Start animations after loader hides
-    var tl1 = gsap.timeline({ duration: 0.5 });
+    // var tl1 = gsap.timeline({ duration: 0.5 });
 
-    tl1.from(".rays", {
-      height: 0,
-      opacity: 0,
-    });
+    // tl1.from(".rays", {
+    //   height: 0,
+    //   opacity: 0,
+    // });
 
-    tl1.from(".section1 .sparkles-1, .sparkles-2, .grid", {
-      height: 0,
-      opacity: 0,
-    });
+    // tl1.from(".section1 .sparkles-1, .sparkles-2, .grid", {
+    //   height: 0,
+    //   opacity: 0,
+    // });
 
-    tl1.from(".header1", {
-      y: -50,
-      opacity: 0,
-    });
+    // tl1.from(".header1", {
+    //   y: -50,
+    //   opacity: 0,
+    // });
 
-    tl1.from(".a1", {
-      y: 50,
-      opacity: 0,
-      stagger: 0.1,
-    });
+    // tl1.from(".a1", {
+    //   y: 50,
+    //   opacity: 0,
+    //   stagger: 0.1,
+    // });
   }, 1000); // 1 second delay for loader
 });
 
 //section2//
 
-gsap.from(".a2", {
-  scrollTrigger: {
-    trigger: ".section2",
-    markers: false,
-    start: "0% 80%",
-  },
-  x: "-50",
-  ease: "power.in",
-  opacity: 0,
-  duration: 0.5,
-});
+// gsap.from(".a2", {
+//   scrollTrigger: {
+//     trigger: ".section2",
+//     markers: false,
+//     start: "0% 80%",
+//   },
+//   x: "-50",
+//   ease: "power.in",
+//   opacity: 0,
+//   duration: 0.5,
+// });
 
-gsap.from(".a3", {
-  scrollTrigger: {
-    trigger: ".section2",
-    markers: false,
-    start: "0% 80%",
-  },
-  x: "50",
-  ease: "power.in",
-  opacity: 0,
-  duration: 0.5,
-});
+// gsap.from(".a3", {
+//   scrollTrigger: {
+//     trigger: ".section2",
+//     markers: false,
+//     start: "0% 80%",
+//   },
+//   x: "50",
+//   ease: "power.in",
+//   opacity: 0,
+//   duration: 0.5,
+// });
 
-gsap.from(".a4", {
-  scrollTrigger: {
-    trigger: ".section2",
-    markers: false,
-    start: "35% 90%",
+// gsap.from(".a4", {
+//   scrollTrigger: {
+//     trigger: ".section2",
+//     markers: false,
+//     start: "35% 90%",
     
-  },
-  y: "60",
-  ease: "power.in",
-  opacity: 0,
-  duration: 0.5,
-  stagger:0.2,
-});
+//   },
+//   y: "60",
+//   ease: "power.in",
+//   opacity: 0,
+//   duration: 0.5,
+//   stagger:0.2,
+// });
 
-//section3
+// //section3
 
-gsap.from(".a5", {
-  scrollTrigger: {
-    trigger: ".section3",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".a5", {
+//   scrollTrigger: {
+//     trigger: ".section3",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  y: "50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-  stagger:0.4,
-});
+//   },
+//   y: "50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+//   stagger:0.4,
+// });
 
-//work section4//
+// //work section4//
 
-gsap.from(".a6", {
-  scrollTrigger: {
-    trigger: ".section4",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".a6", {
+//   scrollTrigger: {
+//     trigger: ".section4",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  x: "-50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-  stagger:0.4,
-});
+//   },
+//   x: "-50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+//   stagger:0.4,
+// });
 
-gsap.from(".a7", {
-  scrollTrigger: {
-    trigger: ".section4",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".a7", {
+//   scrollTrigger: {
+//     trigger: ".section4",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  x: "50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-  stagger:0.5,
-});
+//   },
+//   x: "50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+//   stagger:0.5,
+// });
 
-//testimonial section//
+// //testimonial section//
 
-gsap.from(".a8", {
-  scrollTrigger: {
-    trigger: ".section5",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".a8", {
+//   scrollTrigger: {
+//     trigger: ".section5",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  x: "-50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-});
+//   },
+//   x: "-50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+// });
 
-gsap.from(".a9", {
-  scrollTrigger: {
-    trigger: ".section5",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".a9", {
+//   scrollTrigger: {
+//     trigger: ".section5",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  x: "50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-});
+//   },
+//   x: "50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+// });
 
-gsap.from(".a10", {
-  scrollTrigger: {
-    trigger: ".section5",
-    markers: false,
-    start: "30% 90%",
+// gsap.from(".a10", {
+//   scrollTrigger: {
+//     trigger: ".section5",
+//     markers: false,
+//     start: "30% 90%",
     
-  },
-  y: "50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-});
+//   },
+//   y: "50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+// });
 
-//faqs section//
+// //faqs section//
 
-gsap.from(".a11", {
-  scrollTrigger: {
-    trigger: ".section6",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".a11", {
+//   scrollTrigger: {
+//     trigger: ".section6",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  x: "-50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-});
+//   },
+//   x: "-50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+// });
 
-gsap.from(".a12", {
-  scrollTrigger: {
-    trigger: ".section6",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".a12", {
+//   scrollTrigger: {
+//     trigger: ".section6",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  x: "50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-});
+//   },
+//   x: "50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+// });
 
-// pricing section//
+// // pricing section//
 
-gsap.from(".a13", {
-  scrollTrigger: {
-    trigger: ".section7",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".a13", {
+//   scrollTrigger: {
+//     trigger: ".section7",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  x: "-50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-});
+//   },
+//   x: "-50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+// });
 
-gsap.from(".a14", {
-  scrollTrigger: {
-    trigger: ".section7",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".a14", {
+//   scrollTrigger: {
+//     trigger: ".section7",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  x: "50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-});
+//   },
+//   x: "50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+// });
 
-gsap.from(".a15", {
-  scrollTrigger: {
-    trigger: ".section7",
-    markers: false,
-    start: "30% 90%",
+// gsap.from(".a15", {
+//   scrollTrigger: {
+//     trigger: ".section7",
+//     markers: false,
+//     start: "30% 90%",
     
-  },
-  y: "50",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-});
+//   },
+//   y: "50",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+// });
 
 //footer//
-gsap.from(".footer-bg", {
-  scrollTrigger: {
-    trigger: ".footer",
-    markers: false,
-    start: "20% 90%",
+// gsap.from(".footer-bg", {
+//   scrollTrigger: {
+//     trigger: ".footer",
+//     markers: false,
+//     start: "20% 90%",
     
-  },
-  height:"0",
-  opacity:"0",
-  ease: "power.in",
-  duration: 0.5,
-});
+//   },
+//   height:"0",
+//   opacity:"0",
+//   ease: "power.in",
+//   duration: 0.5,
+// });
